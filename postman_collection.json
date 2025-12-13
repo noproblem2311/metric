@@ -1,0 +1,641 @@
+{
+  "info": {
+    "name": "Everfit Metric Tracking System",
+    "description": "Complete API collection for Metric Tracking System with Clean Architecture",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": "2.0.0"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": ["{{baseUrl}}"],
+          "path": ["health"]
+        },
+        "description": "Check if the server is running"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Distance Metric - Meter",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"distance\",\n  \"value\": 5000,\n  \"unit\": \"meter\",\n  \"date\": \"2025-12-12 15:00:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Add a distance metric in meters"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Distance Metric - Centimeter",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"distance\",\n  \"value\": 100,\n  \"unit\": \"centimeter\",\n  \"date\": \"2025-12-13 10:30:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Add a distance metric in centimeters"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Distance Metric - Inch",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"distance\",\n  \"value\": 36,\n  \"unit\": \"inch\",\n  \"date\": \"2025-12-10 09:00:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Add a distance metric in inches"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Distance Metric - Feet",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"distance\",\n  \"value\": 50,\n  \"unit\": \"feet\",\n  \"date\": \"2025-12-11 14:00:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Add a distance metric in feet"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Distance Metric - Yard",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"distance\",\n  \"value\": 100,\n  \"unit\": \"yard\",\n  \"date\": \"2025-12-11 12:00:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Add a distance metric in yards"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Temperature Metric - Celsius",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"temperature\",\n  \"value\": 25,\n  \"unit\": \"celsius\",\n  \"date\": \"2025-12-13 08:00:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Add a temperature metric in Celsius"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Temperature Metric - Fahrenheit",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"temperature\",\n  \"value\": 98.6,\n  \"unit\": \"fahrenheit\",\n  \"date\": \"2025-12-12 14:00:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Add a temperature metric in Fahrenheit"
+      },
+      "response": []
+    },
+    {
+      "name": "Add Temperature Metric - Kelvin",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"temperature\",\n  \"value\": 300,\n  \"unit\": \"kelvin\",\n  \"date\": \"2025-12-14 16:00:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Add a temperature metric in Kelvin"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Distance Metrics - Meter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics?userId=user123&type=distance&unit=meter",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "distance"
+            },
+            {
+              "key": "unit",
+              "value": "meter"
+            }
+          ]
+        },
+        "description": "Get all distance metrics converted to meters"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Distance Metrics - Centimeter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics?userId=user123&type=distance&unit=centimeter",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "distance"
+            },
+            {
+              "key": "unit",
+              "value": "centimeter"
+            }
+          ]
+        },
+        "description": "Get all distance metrics converted to centimeters"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Distance Metrics - Feet",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics?userId=user123&type=distance&unit=feet",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "distance"
+            },
+            {
+              "key": "unit",
+              "value": "feet"
+            }
+          ]
+        },
+        "description": "Get all distance metrics converted to feet"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Distance Metrics - Yard",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics?userId=user123&type=distance&unit=yard",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "distance"
+            },
+            {
+              "key": "unit",
+              "value": "yard"
+            }
+          ]
+        },
+        "description": "Get all distance metrics converted to yards"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Temperature Metrics - Celsius",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics?userId=user123&type=temperature&unit=celsius",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "temperature"
+            },
+            {
+              "key": "unit",
+              "value": "celsius"
+            }
+          ]
+        },
+        "description": "Get all temperature metrics converted to Celsius"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Temperature Metrics - Fahrenheit",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics?userId=user123&type=temperature&unit=fahrenheit",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "temperature"
+            },
+            {
+              "key": "unit",
+              "value": "fahrenheit"
+            }
+          ]
+        },
+        "description": "Get all temperature metrics converted to Fahrenheit"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Temperature Metrics - Kelvin",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics?userId=user123&type=temperature&unit=kelvin",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "temperature"
+            },
+            {
+              "key": "unit",
+              "value": "kelvin"
+            }
+          ]
+        },
+        "description": "Get all temperature metrics converted to Kelvin"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Chart Data - Distance (1 Month)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics/chart?userId=user123&type=distance&unit=meter&startDate=2025-12-01&endDate=2025-12-31&timezone=America/New_York",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics", "chart"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "distance"
+            },
+            {
+              "key": "unit",
+              "value": "meter"
+            },
+            {
+              "key": "startDate",
+              "value": "2025-12-01"
+            },
+            {
+              "key": "endDate",
+              "value": "2025-12-31"
+            },
+            {
+              "key": "timezone",
+              "value": "America/New_York"
+            }
+          ]
+        },
+        "description": "Get chart data for distance metrics in meters for 1 month"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Chart Data - Distance (2 Months)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics/chart?userId=user123&type=distance&unit=feet&startDate=2025-11-01&endDate=2025-12-31&timezone=America/New_York",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics", "chart"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "distance"
+            },
+            {
+              "key": "unit",
+              "value": "feet"
+            },
+            {
+              "key": "startDate",
+              "value": "2025-11-01"
+            },
+            {
+              "key": "endDate",
+              "value": "2025-12-31"
+            },
+            {
+              "key": "timezone",
+              "value": "America/New_York"
+            }
+          ]
+        },
+        "description": "Get chart data for distance metrics in feet for 2 months"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Chart Data - Temperature (1 Month)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics/chart?userId=user123&type=temperature&unit=celsius&startDate=2025-12-01&endDate=2025-12-31&timezone=America/New_York",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics", "chart"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "temperature"
+            },
+            {
+              "key": "unit",
+              "value": "celsius"
+            },
+            {
+              "key": "startDate",
+              "value": "2025-12-01"
+            },
+            {
+              "key": "endDate",
+              "value": "2025-12-31"
+            },
+            {
+              "key": "timezone",
+              "value": "America/New_York"
+            }
+          ]
+        },
+        "description": "Get chart data for temperature metrics in Celsius for 1 month"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Chart Data - Temperature (Asia/Tokyo)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics/chart?userId=user123&type=temperature&unit=fahrenheit&startDate=2025-12-01&endDate=2025-12-31&timezone=Asia/Tokyo",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics", "chart"],
+          "query": [
+            {
+              "key": "userId",
+              "value": "user123"
+            },
+            {
+              "key": "type",
+              "value": "temperature"
+            },
+            {
+              "key": "unit",
+              "value": "fahrenheit"
+            },
+            {
+              "key": "startDate",
+              "value": "2025-12-01"
+            },
+            {
+              "key": "endDate",
+              "value": "2025-12-31"
+            },
+            {
+              "key": "timezone",
+              "value": "Asia/Tokyo"
+            }
+          ]
+        },
+        "description": "Get chart data for temperature metrics in Fahrenheit with Tokyo timezone"
+      },
+      "response": []
+    },
+    {
+      "name": "Error - Invalid Unit",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"distance\",\n  \"value\": 100,\n  \"unit\": \"kilometer\",\n  \"date\": \"2025-12-13 10:30:00\",\n  \"timezone\": \"America/New_York\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Test error handling - invalid unit (kilometer not supported)"
+      },
+      "response": []
+    },
+    {
+      "name": "Error - Invalid Timezone",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"distance\",\n  \"value\": 100,\n  \"unit\": \"meter\",\n  \"date\": \"2025-12-13 10:30:00\",\n  \"timezone\": \"Invalid/Timezone\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Test error handling - invalid timezone"
+      },
+      "response": []
+    },
+    {
+      "name": "Error - Missing Required Fields",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"type\": \"distance\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/metrics",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "metrics"]
+        },
+        "description": "Test validation - missing required fields"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}
+
